@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Initial Contractor taxonomy-->
+<xs:schema
+  attributeFormDefault="unqualified"
+  elementFormDefault="qualified"
+  targetNamespace="http://xbrl.us/liberty/v0.1/2020-11-01/liberty-all"
+  xmlns:dei="http://xbrl.sec.gov/dei/2019-01-31"
+  xmlns:liberty="http://xbrl.us/liberty/v0.1/2020-11-01/liberty"
+  xmlns:liberty-all="http://xbrl.us/liberty/v0.1/2020-11-01/liberty-all"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric"
+  xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:annotation>
+        <xs:documentation>This schema contains core elements for the Contractor taxonomy and is a comprehensive list of all roles.</xs:documentation>
+        <xs:appinfo>
+            <link:roleType
+              id="roleType_BalanceSheet"
+              roleURI="http://xbrl.us/liberty/v0.1/2020-11-01/roles/BalanceSheet">
+                <link:definition>100 - Balance Sheet</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+            </link:roleType>
+            <link:linkbaseRef
+              xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+              xlink:href="liberty_all_2011-11-01_r01_pre.xml"
+              xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"
+              xlink:type="simple"/>
+            <link:linkbaseRef
+              xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+              xlink:href="liberty_all_2011-11-01_r01_def.xml"
+              xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef"
+              xlink:type="simple"/>
+            <link:linkbaseRef
+              xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+              xlink:href="liberty_all_2011-11-01_r01_cal.xml"
+              xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef"
+              xlink:type="simple"/>
+        </xs:appinfo>
+    </xs:annotation>
+    <xs:import
+      namespace="http://www.xbrl.org/2003/instance"
+      schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+    <xs:import
+      namespace="http://xbrl.org/2005/xbrldt"
+      schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+    <xs:import
+      namespace="http://xbrl.sec.gov/dei/2019-01-31"
+      schemaLocation="https://xbrl.sec.gov/dei/2019/dei-2019-01-31.xsd"/>
+    <xs:import
+      namespace="http://xbrl.us/liberty/v0.1/2020-11-01/liberty"
+      schemaLocation="liberty_2020-11-01_r01.xsd"/>
+</xs:schema>
