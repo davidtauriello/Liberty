@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--extracted from OIM /Users/campbellpryde/Documents/GitHub/Liberty/instance/liberty-meta.json-->
+<xbrl
+  xmlns="http://www.xbrl.org/2003/instance"
+  xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+  xmlns:liberty="http://xbrl.us/liberty/v0.1/2020-11-01/liberty"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <link:schemaRef
+      xlink:href="https://raw.githubusercontent.com/xbrlus/Liberty/main/liberty_all_2020-11-01_r01.xsd"
+      xlink:type="simple"/>
+    <context id="c-01">
+        <entity>
+            <identifier scheme="http://www.ferc.gov/eqr/2021-01-01/ferc/cid">C000001</identifier>
+        </entity>
+        <period>
+            <instant>2019-12-31</instant>
+        </period>
+    </context>
+    <unit id="u-01">
+        <measure>iso4217:USD</measure>
+    </unit>
+    <liberty:COMMERCIAL_CURRENTASSETS_CASH
+      contextRef="c-01"
+      decimals="INF"
+      id="BalanceSheet.1.CASH"
+      unitRef="u-01">139000000</liberty:COMMERCIAL_CURRENTASSETS_CASH>
+    <liberty:COMMERCIAL_CURRENTASSETS_ACCOUNTSRECEIVABLE
+      contextRef="c-01"
+      decimals="INF"
+      id="BalanceSheet.1.ACCOUNTSRECEIVABLE"
+      unitRef="u-01">407000000</liberty:COMMERCIAL_CURRENTASSETS_ACCOUNTSRECEIVABLE>
+    <liberty:COMMERCIAL_CURRENTASSETS_PREPAIDEXPENSES
+      contextRef="c-01"
+      decimals="INF"
+      id="BalanceSheet.1.PREPAIDEXPENSES"
+      unitRef="u-01">147000000</liberty:COMMERCIAL_CURRENTASSETS_PREPAIDEXPENSES>
+    <liberty:COMMERCIAL_UNCLASSIFIED_CURRENTASSETS
+      contextRef="c-01"
+      decimals="INF"
+      id="BalanceSheet.1.UNCLASSIFIED_CURRENTASSETS"
+      unitRef="u-01">502000000</liberty:COMMERCIAL_UNCLASSIFIED_CURRENTASSETS>
+    <liberty:COMMERCIAL_ASSETS_CURRENTASSETS
+      contextRef="c-01"
+      decimals="INF"
+      id="BalanceSheet.1.CURRENTASSETS"
+      unitRef="u-01">1611000000</liberty:COMMERCIAL_ASSETS_CURRENTASSETS>
+    <liberty:COMMERCIAL_ASSETS_FIXEDASSETS
+      contextRef="c-01"
+      decimals="INF"
+      id="BalanceSheet.1.FIXEDASSETS"
+      unitRef="u-01">5446000000</liberty:COMMERCIAL_ASSETS_FIXEDASSETS>
+    <liberty:COMMERCIAL_FIXEDASSETS_ACCUMULATEDDEPRECIATION
+      contextRef="c-01"
+      decimals="INF"
+      id="BalanceSheet.1.ACCUMULATEDDEPRECIATION"
+      unitRef="u-01">3477000000</liberty:COMMERCIAL_FIXEDASSETS_ACCUMULATEDDEPRECIATION>
+    <liberty:COMMERCIAL_ASSETS_FIXEDASSETS_NET
+      contextRef="c-01"
+      decimals="INF"
+      id="BalanceSheet.1.FIXEDASSETS_NET"
+      unitRef="u-01">1969000000</liberty:COMMERCIAL_ASSETS_FIXEDASSETS_NET>
+    <liberty:COMMERCIAL_NONCURRENTASSETS_OTHERNON_CURRENTASSETS
+      contextRef="c-01"
+      decimals="INF"
+      id="BalanceSheet.1.OTHERNON_CURRENTASSETS"
+      unitRef="u-01">414000000</liberty:COMMERCIAL_NONCURRENTASSETS_OTHERNON_CURRENTASSETS>
+    <liberty:TOTALNONCURRENTASSETS
+      contextRef="c-01"
+      decimals="INF"
+      id="BalanceSheet.1.TOTALNONCURRENTASSETS"
+      unitRef="u-01">12412000000</liberty:TOTALNONCURRENTASSETS>
+    <liberty:ASSETS
+      contextRef="c-01"
+      decimals="INF"
+      id="BalanceSheet.1.ASSETS"
+      unitRef="u-01">14795000000</liberty:ASSETS>
+</xbrl>

@@ -1,0 +1,119 @@
+{
+    "documentInfo": {
+        "documentType": "http://xbrl.org/YYYY/xbrl-csv",
+        "namespaces": {    
+            "cid": "http://www.ferc.gov/eqr/2021-01-01/ferc/cid",
+            "iso4217": "http://www.xbrl.org/2003/iso4217",
+            "liberty":	"http://xbrl.us/liberty/v0.1/2020-11-01/liberty",
+            "scheme":	"http://xbrl.org/entity/identification/scheme",
+            "xbrli":	"http://www.xbrl.org/2003/instance",
+            "num":	"http://www.xbrl.org/dtr/type/numeric"
+        },
+        "taxonomy": [
+            "https://raw.githubusercontent.com/xbrlus/Liberty/main/liberty_all_2020-11-01_r01.xsd"
+        ]
+    },
+    "tables": {
+        "BalanceSheet": {
+            "template": "BalanceSheet",
+            "url": "BalanceSheet.csv"
+        }        
+    },
+    "dimensions":{
+        "entity": "cid:C000001"
+    },
+    "parameters": {
+        "report_period": "2019-01-01..2019-12-31"
+    },
+    "tableTemplates": {
+        "BalanceSheet": {
+            
+            "columns": {          
+                "CASH": {
+                    "dimensions": {
+                        "concept": "liberty:COMMERCIAL_CURRENTASSETS_CASH",
+                        "period": "$report_period@end",
+                        "unit": "iso4217:USD"
+                    }
+                },
+                "ACCOUNTSRECEIVABLE": {
+                    "dimensions": {
+                        "concept": "liberty:COMMERCIAL_CURRENTASSETS_ACCOUNTSRECEIVABLE",
+                        "period": "$report_period@end",
+                        "unit": "iso4217:USD"
+                    }
+                },
+                "INVENTORY": {
+                    "dimensions": {
+                        "concept": "liberty:COMMERCIAL_CURRENTASSETS_INVENTORY",
+                        "period": "$report_period@end",
+                        "unit": "iso4217:USD"
+                    }
+                },
+                "PREPAIDEXPENSES": {
+                    "dimensions": {
+                        "concept": "liberty:COMMERCIAL_CURRENTASSETS_PREPAIDEXPENSES",
+                        "period": "$report_period@end",
+                        "unit": "iso4217:USD"
+                    }
+                },
+                "UNCLASSIFIED_CURRENTASSETS": {
+                    "dimensions": {
+                        "concept": "liberty:COMMERCIAL_UNCLASSIFIED_CURRENTASSETS",
+                        "period": "$report_period@end",
+                        "unit": "iso4217:USD"
+                    }
+                },
+                "CURRENTASSETS": {
+                    "dimensions": {
+                        "concept": "liberty:COMMERCIAL_ASSETS_CURRENTASSETS",
+                        "period": "$report_period@end",
+                        "unit": "iso4217:USD"
+                    }
+                },
+                "FIXEDASSETS": {
+                    "dimensions": {
+                        "concept": "liberty:COMMERCIAL_ASSETS_FIXEDASSETS",
+                        "period": "$report_period@end",
+                        "unit": "iso4217:USD"
+                    }
+                },
+                "ACCUMULATEDDEPRECIATION": {
+                    "dimensions": {
+                        "concept": "liberty:COMMERCIAL_FIXEDASSETS_ACCUMULATEDDEPRECIATION",
+                        "period": "$report_period@end",
+                        "unit": "iso4217:USD"
+                    }
+                },
+                "FIXEDASSETS_NET": {
+                    "dimensions": {
+                        "concept": "liberty:COMMERCIAL_ASSETS_FIXEDASSETS_NET",
+                        "period": "$report_period@end",
+                        "unit": "iso4217:USD"
+                    }
+                },
+                "OTHERNON_CURRENTASSETS": {
+                    "dimensions": {
+                        "concept": "liberty:COMMERCIAL_NONCURRENTASSETS_OTHERNON_CURRENTASSETS",
+                        "period": "$report_period@end",
+                        "unit": "iso4217:USD"
+                    }
+                },
+                "TOTALNONCURRENTASSETS": {
+                    "dimensions": {
+                        "concept": "liberty:TOTALNONCURRENTASSETS",
+                        "period": "$report_period@end",
+                        "unit": "iso4217:USD"
+                    }
+                },
+                "ASSETS": {
+                    "dimensions": {
+                        "concept": "liberty:ASSETS",
+                        "period": "$report_period@end",
+                        "unit": "iso4217:USD"
+                    }
+                }
+            }
+        }
+    }
+}
