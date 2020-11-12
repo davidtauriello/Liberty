@@ -20,7 +20,8 @@
         }        
     },
     "dimensions":{
-        "entity": "cid:C000001"
+        "entity": "cid:C000001",
+        "unit": "iso4217:USD"
     },
     "parameters": {
         "report_period": "2019-01-01..2019-12-31"
@@ -32,85 +33,73 @@
                 "CASH": {
                     "dimensions": {
                         "concept": "liberty:COMMERCIAL_CURRENTASSETS_CASH",
-                        "period": "$report_period@end",
-                        "unit": "iso4217:USD"
+                        "period": "$report_period@end"
                     }
                 },
                 "ACCOUNTSRECEIVABLE": {
                     "dimensions": {
                         "concept": "liberty:COMMERCIAL_CURRENTASSETS_ACCOUNTSRECEIVABLE",
-                        "period": "$report_period@end",
-                        "unit": "iso4217:USD"
+                        "period": "$report_period@end"
                     }
                 },
                 "INVENTORY": {
                     "dimensions": {
                         "concept": "liberty:COMMERCIAL_CURRENTASSETS_INVENTORY",
-                        "period": "$report_period@end",
-                        "unit": "iso4217:USD"
+                        "period": "$report_period@end"
                     }
                 },
                 "PREPAIDEXPENSES": {
                     "dimensions": {
                         "concept": "liberty:COMMERCIAL_CURRENTASSETS_PREPAIDEXPENSES",
-                        "period": "$report_period@end",
-                        "unit": "iso4217:USD"
+                        "period": "$report_period@end"
                     }
                 },
                 "UNCLASSIFIED_CURRENTASSETS": {
                     "dimensions": {
                         "concept": "liberty:COMMERCIAL_UNCLASSIFIED_CURRENTASSETS",
-                        "period": "$report_period@end",
-                        "unit": "iso4217:USD"
+                        "period": "$report_period@end"
                     }
                 },
                 "CURRENTASSETS": {
                     "dimensions": {
                         "concept": "liberty:COMMERCIAL_ASSETS_CURRENTASSETS",
-                        "period": "$report_period@end",
-                        "unit": "iso4217:USD"
+                        "period": "$report_period@end"
                     }
                 },
                 "FIXEDASSETS": {
                     "dimensions": {
                         "concept": "liberty:COMMERCIAL_ASSETS_FIXEDASSETS",
-                        "period": "$report_period@end",
-                        "unit": "iso4217:USD"
+                        "period": "$report_period@end"
                     }
                 },
                 "ACCUMULATEDDEPRECIATION": {
                     "dimensions": {
                         "concept": "liberty:COMMERCIAL_FIXEDASSETS_ACCUMULATEDDEPRECIATION",
-                        "period": "$report_period@end",
-                        "unit": "iso4217:USD"
+                        "period": "$report_period@end"
                     }
                 },
                 "FIXEDASSETS_NET": {
                     "dimensions": {
                         "concept": "liberty:COMMERCIAL_ASSETS_FIXEDASSETS_NET",
-                        "period": "$report_period@end",
-                        "unit": "iso4217:USD"
+                        "period": "$report_period@end"
                     }
                 },
                 "OTHERNON_CURRENTASSETS": {
                     "dimensions": {
                         "concept": "liberty:COMMERCIAL_NONCURRENTASSETS_OTHERNON_CURRENTASSETS",
-                        "period": "$report_period@end",
-                        "unit": "iso4217:USD"
+                        "period": "$report_period@end"
                     }
                 },
                 "TOTALNONCURRENTASSETS": {
                     "dimensions": {
                         "concept": "liberty:TOTALNONCURRENTASSETS",
-                        "period": "$report_period@end",
-                        "unit": "iso4217:USD"
+                        "period": "$report_period@end"
                     }
                 },
                 "ASSETS": {
                     "dimensions": {
                         "concept": "liberty:ASSETS",
-                        "period": "$report_period@end",
-                        "unit": "iso4217:USD"
+                        "period": "$report_period@end"
                     }
                 }
             }

@@ -1,0 +1,48 @@
+{
+    "documentInfo": {
+        "documentType": "http://xbrl.org/YYYY/xbrl-csv",
+        "namespaces": {    
+            "cid": "http://www.ferc.gov/eqr/2021-01-01/ferc/cid",
+            "iso4217": "http://www.xbrl.org/2003/iso4217",
+            "liberty":	"http://xbrl.us/liberty/v0.1/2020-11-01/liberty",
+            "scheme":	"http://xbrl.org/entity/identification/scheme",
+            "xbrli":	"http://www.xbrl.org/2003/instance",
+            "num":	"http://www.xbrl.org/dtr/type/numeric"
+        },
+        "taxonomy": [
+            "https://raw.githubusercontent.com/xbrlus/Liberty/main/liberty_all_2020-11-01_r01.xsd"
+        ]
+    },
+    "tables": {
+        "BalanceSheet": {
+            "template": "BalanceSheet",
+            "url": "BalanceSheet2.xlsx#bs"
+        }        
+    },
+    "dimensions":{
+        "entity": "cid:C000001",
+        "unit": "iso4217:USD",
+        "period": "2019-12-31T00:00:00"
+    },
+    "decimals":0,
+    "parameters": {
+        "report_period": "2019-01-01..2019-12-31"
+    },
+    "tableTemplates": {
+        "BalanceSheet": {
+            
+            "columns": {
+                "element": {},
+                "unit": {},
+				"amount": {
+                    
+					"dimensions": {
+                        "concept": "$element",
+						"unit": "$unit"
+						
+					}
+				}
+            }
+        }
+    }
+}
