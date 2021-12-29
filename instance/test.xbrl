@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--extracted from OIM /Users/campbellpryde/Documents/GitHub/wip-2016-01-31/docs/Archive.zip/wip-meta2.json-->
+<xbrl
+  xmlns="http://www.xbrl.org/2003/instance"
+  xmlns:dei="http://xbrl.sec.gov/dei/2014-01-31"
+  xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:wip="http://xbrl.us/wip/2016-01-31"
+  xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <link:schemaRef
+      xlink:href="http://taxonomies.xbrl.us/wip/2016/entire/wip-entryPoint-2016-01-31.xsd"
+      xlink:type="simple"/>
+    <context id="c-01">
+        <entity>
+            <identifier scheme="http://xbrl.org/entity/identification/scheme">xyz</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="wip:ContractNumberAxis">
+                    <wip:ContractNumberAxis.domain>1</wip:ContractNumberAxis.domain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2019-01-01</startDate>
+            <endDate>2019-12-31</endDate>
+        </period>
+    </context>
+    <wip:ContractBondedFlag contextRef="c-01" id="WIP.1.ContractBondedFlag">true</wip:ContractBondedFlag>
+    <wip:ContractName contextRef="c-01" id="WIP.1.ContractName">ContractA</wip:ContractName>
+    <wip:ContractStartDate contextRef="c-01" id="WIP.1.ContractStartDate">2016-10-30</wip:ContractStartDate>
+    <wip:ContractEndDate contextRef="c-01" id="WIP.1.ContractEndDate">2017-10-30</wip:ContractEndDate>
+    <context id="c-02">
+        <entity>
+            <identifier scheme="http://xbrl.org/entity/identification/scheme">xyz</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="wip:ContractNumberAxis">
+                    <wip:ContractNumberAxis.domain>1</wip:ContractNumberAxis.domain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2019-12-31</instant>
+        </period>
+    </context>
+    <unit id="u-01">
+        <measure>iso4217:USD</measure>
+    </unit>
+    <wip:ContractRevenueEstimatedRevenue
+      contextRef="c-02"
+      decimals="INF"
+      id="WIP.1.ContractRevenueEstimatedRevenue"
+      unitRef="u-01">800</wip:ContractRevenueEstimatedRevenue>
+    <wip:ContractCostsEstimatedCostToComplete
+      contextRef="c-02"
+      decimals="INF"
+      id="WIP.1.ContractCostsEstimatedCostToComplete"
+      unitRef="u-01">300</wip:ContractCostsEstimatedCostToComplete>
+    <wip:ContractCostsIncurredToDate
+      contextRef="c-02"
+      decimals="INF"
+      id="WIP.1.ContractCostsIncurredToDate"
+      unitRef="u-01">100</wip:ContractCostsIncurredToDate>
+    <wip:ContractBillingsFromInceptionToDate
+      contextRef="c-02"
+      decimals="INF"
+      id="WIP.1.ContractBillingsFromInceptionToDate"
+      unitRef="u-01">300</wip:ContractBillingsFromInceptionToDate>
+    <context id="c-03">
+        <entity>
+            <identifier scheme="http://xbrl.org/entity/identification/scheme">xyz</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="wip:ContractNumberAxis">
+                    <wip:ContractNumberAxis.domain>2</wip:ContractNumberAxis.domain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2019-01-01</startDate>
+            <endDate>2019-12-31</endDate>
+        </period>
+    </context>
+    <wip:ContractBondedFlag contextRef="c-03" id="WIP.2.ContractBondedFlag">true</wip:ContractBondedFlag>
+    <wip:ContractName contextRef="c-03" id="WIP.2.ContractName">ContractB</wip:ContractName>
+    <wip:ContractStartDate contextRef="c-03" id="WIP.2.ContractStartDate">2016-12-30</wip:ContractStartDate>
+    <wip:ContractEndDate contextRef="c-03" id="WIP.2.ContractEndDate">2017-12-30</wip:ContractEndDate>
+    <context id="c-04">
+        <entity>
+            <identifier scheme="http://xbrl.org/entity/identification/scheme">xyz</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="wip:ContractNumberAxis">
+                    <wip:ContractNumberAxis.domain>2</wip:ContractNumberAxis.domain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2019-12-31</instant>
+        </period>
+    </context>
+    <wip:ContractRevenueEstimatedRevenue
+      contextRef="c-04"
+      decimals="INF"
+      id="WIP.2.ContractRevenueEstimatedRevenue"
+      unitRef="u-01">1500</wip:ContractRevenueEstimatedRevenue>
+    <wip:ContractCostsEstimatedCostToComplete
+      contextRef="c-04"
+      decimals="INF"
+      id="WIP.2.ContractCostsEstimatedCostToComplete"
+      unitRef="u-01">100</wip:ContractCostsEstimatedCostToComplete>
+    <wip:ContractCostsIncurredToDate
+      contextRef="c-04"
+      decimals="INF"
+      id="WIP.2.ContractCostsIncurredToDate"
+      unitRef="u-01">1200</wip:ContractCostsIncurredToDate>
+    <wip:ContractBillingsFromInceptionToDate
+      contextRef="c-04"
+      decimals="INF"
+      id="WIP.2.ContractBillingsFromInceptionToDate"
+      unitRef="u-01">100</wip:ContractBillingsFromInceptionToDate>
+    <context id="c-05">
+        <entity>
+            <identifier scheme="http://xbrl.org/entity/identification/scheme">xyz</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="wip:ContractNumberAxis">
+                    <wip:ContractNumberAxis.domain>3</wip:ContractNumberAxis.domain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2019-01-01</startDate>
+            <endDate>2019-12-31</endDate>
+        </period>
+    </context>
+    <wip:ContractBondedFlag contextRef="c-05" id="WIP.3.ContractBondedFlag">true</wip:ContractBondedFlag>
+    <wip:ContractName contextRef="c-05" id="WIP.3.ContractName">ContractC</wip:ContractName>
+    <wip:ContractStartDate contextRef="c-05" id="WIP.3.ContractStartDate">2016-09-30</wip:ContractStartDate>
+    <wip:ContractEndDate contextRef="c-05" id="WIP.3.ContractEndDate">2017-09-30</wip:ContractEndDate>
+    <context id="c-06">
+        <entity>
+            <identifier scheme="http://xbrl.org/entity/identification/scheme">xyz</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="wip:ContractNumberAxis">
+                    <wip:ContractNumberAxis.domain>3</wip:ContractNumberAxis.domain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2019-12-31</instant>
+        </period>
+    </context>
+    <wip:ContractRevenueEstimatedRevenue
+      contextRef="c-06"
+      decimals="INF"
+      id="WIP.3.ContractRevenueEstimatedRevenue"
+      unitRef="u-01">2500</wip:ContractRevenueEstimatedRevenue>
+    <wip:ContractCostsEstimatedCostToComplete
+      contextRef="c-06"
+      decimals="INF"
+      id="WIP.3.ContractCostsEstimatedCostToComplete"
+      unitRef="u-01">1400</wip:ContractCostsEstimatedCostToComplete>
+    <wip:ContractCostsIncurredToDate
+      contextRef="c-06"
+      decimals="INF"
+      id="WIP.3.ContractCostsIncurredToDate"
+      unitRef="u-01">1000</wip:ContractCostsIncurredToDate>
+    <wip:ContractBillingsFromInceptionToDate
+      contextRef="c-06"
+      decimals="INF"
+      id="WIP.3.ContractBillingsFromInceptionToDate"
+      unitRef="u-01">2500</wip:ContractBillingsFromInceptionToDate>
+    <context id="c-07">
+        <entity>
+            <identifier scheme="http://xbrl.org/entity/identification/scheme">xyz</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="wip:ContractNumberAxis">
+                    <wip:ContractNumberAxis.domain>4</wip:ContractNumberAxis.domain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2019-01-01</startDate>
+            <endDate>2019-12-31</endDate>
+        </period>
+    </context>
+    <wip:ContractBondedFlag contextRef="c-07" id="WIP.4.ContractBondedFlag">true</wip:ContractBondedFlag>
+    <wip:ContractName contextRef="c-07" id="WIP.4.ContractName">Contract G</wip:ContractName>
+    <wip:ContractStartDate contextRef="c-07" id="WIP.4.ContractStartDate">2016-09-30</wip:ContractStartDate>
+    <wip:ContractEndDate contextRef="c-07" id="WIP.4.ContractEndDate">2018-09-30</wip:ContractEndDate>
+    <context id="c-08">
+        <entity>
+            <identifier scheme="http://xbrl.org/entity/identification/scheme">xyz</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="wip:ContractNumberAxis">
+                    <wip:ContractNumberAxis.domain>4</wip:ContractNumberAxis.domain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2019-12-31</instant>
+        </period>
+    </context>
+    <wip:ContractRevenueEstimatedRevenue
+      contextRef="c-08"
+      decimals="INF"
+      id="WIP.4.ContractRevenueEstimatedRevenue"
+      unitRef="u-01">1200</wip:ContractRevenueEstimatedRevenue>
+    <wip:ContractCostsEstimatedCostToComplete
+      contextRef="c-08"
+      decimals="INF"
+      id="WIP.4.ContractCostsEstimatedCostToComplete"
+      unitRef="u-01">600</wip:ContractCostsEstimatedCostToComplete>
+    <context id="c-09">
+        <entity>
+            <identifier scheme="http://xbrl.org/entity/identification/scheme">xyz</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="wip:ContractNumberAxis">
+                    <wip:ContractNumberAxis.domain>5</wip:ContractNumberAxis.domain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2019-01-01</startDate>
+            <endDate>2019-12-31</endDate>
+        </period>
+    </context>
+    <wip:ContractBondedFlag contextRef="c-09" id="WIP.5.ContractBondedFlag">false</wip:ContractBondedFlag>
+    <wip:ContractName contextRef="c-09" id="WIP.5.ContractName">ContractD</wip:ContractName>
+    <wip:ContractStartDate contextRef="c-09" id="WIP.5.ContractStartDate">2016-07-30</wip:ContractStartDate>
+    <wip:ContractEndDate contextRef="c-09" id="WIP.5.ContractEndDate">2018-07-30</wip:ContractEndDate>
+    <context id="c-10">
+        <entity>
+            <identifier scheme="http://xbrl.org/entity/identification/scheme">xyz</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="wip:ContractNumberAxis">
+                    <wip:ContractNumberAxis.domain>5</wip:ContractNumberAxis.domain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2019-12-31</instant>
+        </period>
+    </context>
+    <wip:ContractRevenueEstimatedRevenue
+      contextRef="c-10"
+      decimals="INF"
+      id="WIP.5.ContractRevenueEstimatedRevenue"
+      unitRef="u-01">4000</wip:ContractRevenueEstimatedRevenue>
+    <wip:ContractCostsEstimatedCostToComplete
+      contextRef="c-10"
+      decimals="INF"
+      id="WIP.5.ContractCostsEstimatedCostToComplete"
+      unitRef="u-01">1500</wip:ContractCostsEstimatedCostToComplete>
+    <wip:ContractCostsIncurredToDate
+      contextRef="c-10"
+      decimals="INF"
+      id="WIP.5.ContractCostsIncurredToDate"
+      unitRef="u-01">500</wip:ContractCostsIncurredToDate>
+    <wip:ContractBillingsFromInceptionToDate
+      contextRef="c-10"
+      decimals="INF"
+      id="WIP.5.ContractBillingsFromInceptionToDate"
+      unitRef="u-01">1000</wip:ContractBillingsFromInceptionToDate>
+    <context id="c-11">
+        <entity>
+            <identifier scheme="http://xbrl.org/entity/identification/scheme">xyz</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="wip:ContractNumberAxis">
+                    <wip:ContractNumberAxis.domain>7</wip:ContractNumberAxis.domain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2019-01-01</startDate>
+            <endDate>2019-12-31</endDate>
+        </period>
+    </context>
+    <wip:ContractBondedFlag contextRef="c-11" id="WIP.6.ContractBondedFlag">false</wip:ContractBondedFlag>
+    <wip:ContractName contextRef="c-11" id="WIP.6.ContractName">ContractF</wip:ContractName>
+    <wip:ContractStartDate contextRef="c-11" id="WIP.6.ContractStartDate">2016-07-28</wip:ContractStartDate>
+    <wip:ContractEndDate contextRef="c-11" id="WIP.6.ContractEndDate">2017-07-28</wip:ContractEndDate>
+    <context id="c-12">
+        <entity>
+            <identifier scheme="http://xbrl.org/entity/identification/scheme">xyz</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="wip:ContractNumberAxis">
+                    <wip:ContractNumberAxis.domain>7</wip:ContractNumberAxis.domain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2019-12-31</instant>
+        </period>
+    </context>
+    <wip:ContractRevenueEstimatedRevenue
+      contextRef="c-12"
+      decimals="INF"
+      id="WIP.6.ContractRevenueEstimatedRevenue"
+      unitRef="u-01">99000</wip:ContractRevenueEstimatedRevenue>
+    <context id="c-13">
+        <entity>
+            <identifier scheme="http://xbrl.org/entity/identification/scheme">xyz</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="wip:ContractNumberAxis">
+                    <wip:ContractNumberAxis.domain>6</wip:ContractNumberAxis.domain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2019-01-01</startDate>
+            <endDate>2019-12-31</endDate>
+        </period>
+    </context>
+    <wip:ContractBondedFlag contextRef="c-13" id="WIP.7.ContractBondedFlag">true</wip:ContractBondedFlag>
+    <wip:ContractName contextRef="c-13" id="WIP.7.ContractName">ContractE</wip:ContractName>
+    <wip:ContractStartDate contextRef="c-13" id="WIP.7.ContractStartDate">2016-01-30</wip:ContractStartDate>
+    <wip:ContractEndDate contextRef="c-13" id="WIP.7.ContractEndDate">2017-01-30</wip:ContractEndDate>
+    <context id="c-14">
+        <entity>
+            <identifier scheme="http://xbrl.org/entity/identification/scheme">xyz</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="wip:ContractNumberAxis">
+                    <wip:ContractNumberAxis.domain>6</wip:ContractNumberAxis.domain>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2019-12-31</instant>
+        </period>
+    </context>
+    <wip:ContractRevenueEstimatedRevenue
+      contextRef="c-14"
+      decimals="INF"
+      id="WIP.7.ContractRevenueEstimatedRevenue"
+      unitRef="u-01">6500</wip:ContractRevenueEstimatedRevenue>
+    <wip:ContractCostsEstimatedCostToComplete
+      contextRef="c-14"
+      decimals="INF"
+      id="WIP.7.ContractCostsEstimatedCostToComplete"
+      unitRef="u-01">100</wip:ContractCostsEstimatedCostToComplete>
+    <wip:ContractCostsIncurredToDate
+      contextRef="c-14"
+      decimals="INF"
+      id="WIP.7.ContractCostsIncurredToDate"
+      unitRef="u-01">6000</wip:ContractCostsIncurredToDate>
+    <wip:ContractBillingsFromInceptionToDate
+      contextRef="c-14"
+      decimals="INF"
+      id="WIP.7.ContractBillingsFromInceptionToDate"
+      unitRef="u-01">6500</wip:ContractBillingsFromInceptionToDate>
+    <context id="c-15">
+        <entity>
+            <identifier scheme="http://xbrl.org/entity/identification/scheme">xyz</identifier>
+        </entity>
+        <period>
+            <startDate>2019-01-01</startDate>
+            <endDate>2019-12-31</endDate>
+        </period>
+    </context>
+    <dei:EntityRegistrantName contextRef="c-15" id="refData.1.CompanyName">XYZ Company</dei:EntityRegistrantName>
+    <dei:DocumentPeriodEndDate contextRef="c-15" id="refData.1.DateAsOf">2019-12-31</dei:DocumentPeriodEndDate>
+</xbrl>
